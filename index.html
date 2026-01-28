@@ -8,8 +8,8 @@
     <body>
         <h2>Applicatin Form </h2>
 
-
-        <form action="">
+<div>
+        <form action="http://127.0.0.1:5500/Day_4_portpholio/index.html">
             <fieldset style="border-radius: 5px">
                 <legend>Personal Details</legend>
         <table>
@@ -23,11 +23,15 @@
             </tr>
             <tr>
                 <td> <label for="#mob">Mobile Number</label></td>
-                <td><input type="tel" id="#mob" placeholder="10 digits Mobile number"></td>
+                <td><input type="tel" id="#mob" placeholder="10 digits Mobile number" required></td>
             </tr>
             <tr>
                 <td> <label for="#email">Email</label></td>
-                <td><input type="email" id="#email" placeholder="Emaile@.com"></td>
+                <td><input type="email" id="#email" placeholder="Emaile@.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="#age">Age</label></td>
+                <td><input type="number" name="age" id="#age" min="18" max="30" placeholder="18+"></td>
             </tr>
             <tr>
                 <td><label for="#pass">Password</label> </td>
@@ -68,7 +72,9 @@
         <input type="submit" />
         </fieldset>
     </form>
+</div>
 
+<div>
     <form action="">
         <fieldset>
             <legend>Course Details</legend>
@@ -96,5 +102,6 @@
         <input type="submit" />
         </fieldset>
     </form>
+</div>
     </body>
     </html>
